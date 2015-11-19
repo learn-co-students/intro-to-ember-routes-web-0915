@@ -2,7 +2,7 @@
 import { expect } from 'chai';
 import {
   describeModule,
-  it
+  it 
 } from 'ember-mocha';
 
 describeModule(

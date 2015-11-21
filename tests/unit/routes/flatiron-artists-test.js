@@ -15,8 +15,8 @@ describeModule(
       // create The artists should be Kanye West, and Lady Gaga
       // i.e. [Ember.Object.create({name: "Justin Bieber"}), Ember.Object.create({name: "Bob"})]
       var route = this.subject();
-      var artists = route.model();
-
+      var artists = this.model(); // [Ember.Object.create({name: "Justin Bieber"}), Ember.Object.create({name: "Bob"})]
+      // debugger;
       expect(artists.length).to.eq(2);
       expect(artists[0].get('name')).to.eq("Kanye West");
       expect(artists[1].get('name')).to.eq("Lady Gaga");
